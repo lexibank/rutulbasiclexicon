@@ -1,19 +1,58 @@
 {
-    "title": "CLDF dataset derived from +++'s \"Rutul Basic Lexicon\" from +++",
+    "title": "CLDF dataset derived from Aleseeva's's \"Atlas of Rutul Dailects\" from 2025",
     "access_right": "open",
     "keywords": [
         "cldf:Wordlist",
         "linguistics"
     ],
-    "creators": [],
-    "contributors": [],
+    "creators": [
+        {
+            "name": "A. Alekseeva"
+        },
+        {
+            "name": "N. Beklemishev"
+        },
+        {
+            "name": "M. Daniel"
+        },
+        {
+            "name": "N. Dobrushina"
+        },
+        {
+            "name": "K. Filatov"
+        },
+        {
+            "name": "A. Ivanova"
+        },
+        {
+            "name": "T. Maisak"
+        },
+        {
+            "name": "M. Melenchenko"
+        },
+        {
+            "name": "G. Moroz"
+        },
+        {
+            "name": "I. Netkachev"
+        },
+        {
+            "name": "I. Sadakov"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Johann-Mattis List",
+            "type": "Other"
+        }
+    ],
     "communities": [
         {
             "identifier": "lexibank"
         }
     ],
     "upload_type": "dataset",
-    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>+++</p>\n</blockquote>",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>A. Alekseeva, N. Beklemishev, M. Daniel, N. Dobrushina, K. Filatov, A. Ivanova, T. Maisak, M. Melenchenko, G. Moroz, I. Netkachev, I. Sadakov. 2025. Atlas of Rutul dialects. Moscow: Linguistic Convergence Laboratory, HSE University. https://lingconlab.github.io/rutul_dialectology/index.html</p>\n</blockquote>",
     "license": {
         "id": "CC-BY-4.0"
     }
