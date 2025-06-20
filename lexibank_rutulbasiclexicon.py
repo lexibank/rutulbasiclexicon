@@ -15,7 +15,7 @@ class CustomLanguage(Language):
 
 class Dataset(BaseDataset):
     dir = pathlib.Path(__file__).parent
-    id = "rutulbl"
+    id = "rutulbasiclexicon"
     #language_class = CustomLanguage
     form_spec = FormSpec(separators="~;,/", missing_data=["∅"], first_form_only=True)
 
@@ -26,11 +26,26 @@ class Dataset(BaseDataset):
 
         # load data
         data = self.raw_dir.read_csv(
-                "rutul_basic_lexicon_lexibank.tsv", delimiter="\t", dicts=True)
+                "rutul_basic_lexicon_lexibank-3.tsv", delimiter="\t", dicts=True)
 
         # retrieve concepts
         concepts = {}
         languages = {}
+        for language in self.languages:
+            idx = language["village"].replace(" ", "-")
+            glot = ""
+            if language["gltc_dialect"] != "NA":
+                glot = language["gltc_dialect"]
+            elif language["gltc_lang"] != "NA":
+                glot = language["gltc_lang"]
+            args.writer.add_language(
+                    ID=idx,
+                    Name=language["village"],
+                    Latitude=language["lat"].replace(",", "."),
+                    Longitude=language["lon"].replace(",", "."),
+                    Glottocode=glot
+                    )
+
         idx = 1
         for i, row in pb(enumerate(data)):
             concept = row["feature_title"].split("‘")[1][:-1]
@@ -44,18 +59,19 @@ class Dataset(BaseDataset):
                         )
                 idx += 1
             language = row["settlement"]
-            if language not in languages:
-                languages[language] = slug(language, lowercase=False)
-                args.writer.add_language(
-                        ID=languages[language],
-                        Name=language
-                        )
+            #if language not in languages:
+            #    languages[language] = slug(language, lowercase=False)
+            #    args.writer.add_language(
+            #            ID=languages[language],
+            #            Name=language
+            #            )
             if row['answer'] != '—':
                 args.writer.add_form_with_segments(
                         Parameter_ID=concepts[concept],
-                        Language_ID=languages[language],
+                        Language_ID=language,
                         Value=row["value"],
                         Form=row["answer"],
-                        Segments=row["answer_lexibank"].strip().split()
+                        Segments=row["answer_lexibank"].strip().split(),
+                        Source="rutul"
                         )
 
