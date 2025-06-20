@@ -14,7 +14,7 @@
         {
             "rdf:about": "git@github.com:lexibank/rutulbasiclexicon",
             "rdf:type": "prov:Entity",
-            "dc:created": "18c53dd",
+            "dc:created": "e2fbdac",
             "dc:title": "Repository"
         },
         {
@@ -43,7 +43,7 @@
         },
         {
             "dc:title": "python",
-            "dc:description": "3.13.3"
+            "dc:description": "3.13.2"
         },
         {
             "dc:title": "python-packages",

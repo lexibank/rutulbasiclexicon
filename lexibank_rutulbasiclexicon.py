@@ -30,6 +30,15 @@ class Dataset(BaseDataset):
 
         # retrieve concepts
         concepts = {}
+        for concept in self.concepts:
+            idx = concept["NUMBER"] + "_" + slug(concept["ENGLISH"])
+            args.writer.add_concept(
+                    ID=idx,
+                    Name=concept["ENGLISH"],
+                    Concepticon_ID=concept["CONCEPTICON_ID"],
+                    Concepticon_Gloss=concept["CONCEPTICON_GLOSS"]
+                    )
+            concepts[concept["ENGLISH"]] = idx
         languages = {}
         for language in self.languages:
             idx = language["village"].replace(" ", "-")
@@ -49,22 +58,8 @@ class Dataset(BaseDataset):
         idx = 1
         for i, row in pb(enumerate(data)):
             concept = row["feature_title"].split("‘")[1][:-1]
-            print(concept)
-            if concept not in concepts:
-                cid = f"{idx}_{slug(concept)}"
-                concepts[concept] = cid
-                args.writer.add_concept(
-                        ID=cid,
-                        Name=concept
-                        )
-                idx += 1
+
             language = row["settlement"]
-            #if language not in languages:
-            #    languages[language] = slug(language, lowercase=False)
-            #    args.writer.add_language(
-            #            ID=languages[language],
-            #            Name=language
-            #            )
             if row['answer'] != '—':
                 args.writer.add_form_with_segments(
                         Parameter_ID=concepts[concept],

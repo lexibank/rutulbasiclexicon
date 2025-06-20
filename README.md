@@ -18,13 +18,13 @@ Available online at https://lingconlab.github.io/rutul_dialectology
 
 
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
-![Concepticon: 0%](https://img.shields.io/badge/Concepticon-0%25-red.svg "Concepticon: 0%")
+![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
 - **Varieties:** 12 (linked to 4 different Glottocodes)
-- **Concepts:** 207 (linked to 0 different Concepticon concept sets)
+- **Concepts:** 207 (linked to 207 different Concepticon concept sets)
 - **Lexemes:** 2,472
 - **Sources:** 1
 - **Synonymy:** 1.00
