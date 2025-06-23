@@ -8,13 +8,13 @@
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
     "dc:source": "sources.bib",
-    "dc:title": "CLDF dataset derived from Alekseeva et al's \"Atlas of Rutul Dailects\" from 2025",
+    "dc:title": "CLDF dataset derived from Alekseeva et al's \"Atlas of Rutul Dialects\" from 2025",
     "dcat:accessURL": "git@github.com:lexibank/rutulbasiclexicon",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "git@github.com:lexibank/rutulbasiclexicon",
             "rdf:type": "prov:Entity",
-            "dc:created": "v0.1-4-g127d707",
+            "dc:created": "v0.1-5-g60c4fb7",
             "dc:title": "Repository"
         },
         {
