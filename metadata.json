@@ -1,6 +1,6 @@
 {
     "id": "rutulbasiclexicon",
-    "title": "CLDF dataset derived from Alekseeva's's \"Atlas of Rutul Dailects\" from 2025",
+    "title": "CLDF dataset derived from Alekseeva et al's \"Atlas of Rutul Dailects\" from 2025",
     "license": "CC-BY-4.0",
     "url": "https://lingconlab.github.io/rutul_dialectology",
     "citation": "A. Alekseeva, N. Beklemishev, M. Daniel, N. Dobrushina, K. Filatov, A. Ivanova, T. Maisak, M. Melenchenko, G. Moroz, I. Netkachev, I. Sadakov. 2025. Atlas of Rutul dialects. Moscow: Linguistic Convergence Laboratory, HSE University. https://lingconlab.github.io/rutul_dialectology/index.html"
