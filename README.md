@@ -1,4 +1,4 @@
-# CLDF dataset derived from Alekseeva's's "Atlas of Rutul Dailects" from 2025
+# CLDF dataset derived from Alekseeva et al's "Atlas of Rutul Dailects" from 2025
 
 ## How to cite
 
