@@ -8,13 +8,13 @@
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
     "dc:source": "sources.bib",
-    "dc:title": "CLDF dataset derived from Aleseeva's's \"Atlas of Rutul Dailects\" from 2025",
+    "dc:title": "CLDF dataset derived from Alekseeva's's \"Atlas of Rutul Dailects\" from 2025",
     "dcat:accessURL": "git@github.com:lexibank/rutulbasiclexicon",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "git@github.com:lexibank/rutulbasiclexicon",
             "rdf:type": "prov:Entity",
-            "dc:created": "e2fbdac",
+            "dc:created": "v0.1",
             "dc:title": "Repository"
         },
         {
@@ -43,7 +43,7 @@
         },
         {
             "dc:title": "python",
-            "dc:description": "3.13.2"
+            "dc:description": "3.13.3"
         },
         {
             "dc:title": "python-packages",
